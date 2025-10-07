@@ -283,10 +283,10 @@ class CalculatorServiceTest extends TestCase
 {
     public function test_addition_returns_correct_result()
     {
-        // Arrange: service object তৈরি করা
+        // Arrange: service object 
         $calculator = new CalculatorService();
         
-        // Act: ফাংশন কল করা
+        // Act
         $result = $calculator->calculate(5, 3, 'add');
         
         // Assert: ফলাফল যাচাই করা
@@ -448,17 +448,17 @@ class CalculatorControllerTest extends TestCase
 
 All tests follow the **Arrange-Act-Assert** pattern:
 
-1. **Arrange** (প্রস্তুতি): Set up test data and dependencies
+1. **Arrange** : Set up test data and dependencies
 ```php
 $calculator = new CalculatorService();
 ```
 
-2. **Act** (কাজ): Execute the code being tested
+2. **Act** : Execute the code being tested
 ```php
 $result = $calculator->calculate(5, 3, 'add');
 ```
 
-3. **Assert** (যাচাই): Verify the results
+3. **Assert** : Verify the results
 ```php
 $this->assertEquals(8, $result, 'Addition result should be 8');
 ```
